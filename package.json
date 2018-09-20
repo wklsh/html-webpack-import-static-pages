@@ -1,0 +1,31 @@
+{
+  "name": "html-webpack-import-static-pages",
+  "version": "1.0.0",
+  "description": "Dynamically import static HTML pages for HTMLWebpackPlugin",
+  "main": "index.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^4.0.0-alpha.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wklsh/html-webpack-import-static-pages.git"
+  },
+  "keywords": [
+    "webpack",
+    "HTMLWebpackplugin",
+    "static",
+    "html",
+    "pages"
+  ],
+  "author": "wklsh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wklsh/html-webpack-import-static-pages/issues"
+  },
+  "homepage": "https://github.com/wklsh/html-webpack-import-static-pages#readme"
+}
