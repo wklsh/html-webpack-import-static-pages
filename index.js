@@ -13,7 +13,7 @@ class HtmlWebpackImportStaticPages {
 
 	apply(compiler) {
 		// Obtain all files within the source folder, and generate an array
-		fs.readdirSync(path.resolve(__dirname, "src"))
+		fs.readdirSync(path.resolve(__dirname, "../../src"))
 			// Filter through and compare with the blacklist
 			.filter(
 				(fileName) => fileName.endsWith(".html") && this.options.blacklist.indexOf(fileName.split(".html")[0]) == -1
