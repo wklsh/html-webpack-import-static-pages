@@ -3,10 +3,10 @@
   "version": "1.0.1",
   "description": "Dynamically import static HTML pages for HTMLWebpackPlugin",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "html-webpack-plugin": "^4.0.0-alpha.2"
+  "dependencies": {
+      "html-webpack-plugin": "^4.0.0-alpha.2"
   },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
