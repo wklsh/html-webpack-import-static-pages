@@ -5,7 +5,7 @@ Dynamically import static HTML pages for HTMLWebpack plugin without having to ma
 This is an extension to the [webpack](http://webpack.github.io) plugin [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin).
 
 ## Installation
-Plugin requires [webpack](http://webpack.github.io) (v4 or higher) and [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin) (v4 or higher).
+Plugin requires [webpack](http://webpack.github.io) (v4 or higher), and [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin) (v4 or higher - installed as a dependency).
 
 ## Basic Usage
 ```
@@ -34,10 +34,10 @@ plugins: [
 
 ## Configuration
 - `blacklist`: Accepts HTML file names - HTML pages specified here would not be generated via HTMLWebpackPlugin
-- `chunkAssign`: Accepts HTML file names - Assign chunks to be included into specific HTML pages generated the plugin
+- `chunkAssign`: Accepts HTML file names and chunk array - Assign chunks to be included into specific HTML pages
 
 ## TO-DO's
-- Add a configuration option for src folder path (currently defaults to `src` folder)
+- Add a configuration option for custom source folder pathnames (currently defaults to `src` folder)
 
 ## Version
 v1.0.x

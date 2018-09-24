@@ -1,6 +1,6 @@
 {
   "name": "html-webpack-import-static-pages",
-  "version": "1.0.1a",
+  "version": "1.0.1b",
   "description": "Dynamically import static HTML pages for HTMLWebpackPlugin",
   "main": "index.js",
   "dependencies": {
