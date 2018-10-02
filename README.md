@@ -12,7 +12,7 @@ npm install -D html-webpack-import-static-pages
 Plugin requires [webpack](http://webpack.github.io) (v4 or higher), and [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin) (v4 or higher - installed as a dependency).
 
 ## Basic Usage
-```
+```jsx
 const HtmlWebpackImportStaticPages = require("html-webpack-import-static-pages");
 
 module.exports = {
