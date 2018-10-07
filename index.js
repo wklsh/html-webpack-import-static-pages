@@ -4,7 +4,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 class HtmlWebpackImportStaticPages {
 	constructor(options) {
-		const { blacklist = [], chunkAssign = {} } = options;
+		const { blacklist = [], chunkAssign = {} } = options || {};
 		this.options = {
 			blacklist,
 			chunkAssign
