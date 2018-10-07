@@ -4,16 +4,19 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 class HtmlWebpackImportStaticPages {
 	constructor(options) {
-		const { blacklist = [], chunkAssign = {} } = options || {};
+		const { blacklist = [], chunkAssign = {}, path = null } = options || {};
 		this.options = {
 			blacklist,
-			chunkAssign
+			chunkAssign,
+			path
 		};
 	}
 
 	apply(compiler) {
+		const sourcePath = path.resolve(this.options.path || compiler.context);
+
 		// Obtain all files within the source folder, and generate an array
-		fs.readdirSync(path.resolve(__dirname, "../../src"))
+		fs.readdirSync(sourcePath)
 			// Filter through and compare with the blacklist
 			.filter(
 				(fileName) => fileName.endsWith(".html") && this.options.blacklist.indexOf(fileName.split(".html")[0]) == -1
@@ -35,7 +38,7 @@ class HtmlWebpackImportStaticPages {
 
 				// Call HtmlWebPackPlugin for every fileName map item
 				new HtmlWebPackPlugin({
-					template: `./src/${pluginArrItem}`,
+					template: path.join(sourcePath, pluginArrItem),
 					filename: pluginArrItem,
 					inject: "body",
 					chunksSortMode: "none",
