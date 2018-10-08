@@ -39,9 +39,7 @@ plugins: [
 ## Configuration
 - `blacklist`: Accepts HTML file names - HTML pages specified here would not be generated via HTMLWebpackPlugin
 - `chunkAssign`: Accepts HTML file names and chunk array - Assign chunks to be included into specific HTML pages
-
-## TO-DO's
-- Add a configuration option for custom source folder pathnames (currently defaults to `src` folder)
+- `path`: A path to search for `.html` files - Defaults to `webpack.context`
 
 ## Version
 v1.0.x
