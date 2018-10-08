@@ -5,6 +5,7 @@ Dynamically import static HTML pages for HTMLWebpack plugin without having to ma
 This is an extension to the [webpack](http://webpack.github.io) plugin [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin).
 
 ## Installation
+
 ```
 npm install -D html-webpack-import-static-pages
 ```
@@ -12,6 +13,7 @@ npm install -D html-webpack-import-static-pages
 Plugin requires [webpack](http://webpack.github.io) (v4 or higher), and [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin) (v4 or higher - installed as a dependency).
 
 ## Basic Usage
+
 ```jsx
 const HtmlWebpackImportStaticPages = require("html-webpack-import-static-pages");
 
@@ -28,7 +30,7 @@ plugins: [
     new HtmlWebpackImportStaticPages({
         blacklist: ['page2'],
         chunkAssign: {
-            page: ['app', 'landing']
+            htmlPageName: ['app', 'landing']
         }
     }),
 
@@ -37,10 +39,17 @@ plugins: [
 ```
 
 ## Configuration
+
 - `blacklist`: Accepts HTML file names - HTML pages specified here would not be generated via HTMLWebpackPlugin
 - `chunkAssign`: Accepts HTML file names and chunk array - Assign chunks to be included into specific HTML pages
 - `path`: A path to search for `.html` files - Defaults to `webpack.context`
 
 ## Version
+
+v1.1.x
+
+- Added custom paths
+
 v1.0.x
-* initial release
+
+- initial release
