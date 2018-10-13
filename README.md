@@ -39,11 +39,14 @@ plugins: [
 ]
 ```
 
-## Configuration
+## Options
+|Name|Type|Requirements|Description|
+|:--:|:--:|:-----:|:----------|
+|`path`|`{pathname}`|`optional`|A path to search for `.html` files - Defaults to `webpack.context/src`|
+|`blacklist`|`[HTMLPageName]`|`optional`|Specify HTML files to be ignored by HtmlWebPackPlugin|
+|`blacklist`|`HTMLPageName: ['Chunk']`|`optional`|Assign chunks to be included into specific HTML pages|
 
-- `path`: A path to search for `.html` files - Defaults to `webpack.context/src`
-- `blacklist`: Accepts HTML file names - HTML pages specified here would not be generated via HTMLWebpackPlugin
-- `chunkAssign`: Accepts HTML file names and chunk array - Assign chunks to be included into specific HTML pages
+
 
 ## Version
 
