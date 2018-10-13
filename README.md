@@ -28,7 +28,7 @@ module.exports = {
 
 plugins: [
     new HtmlWebpackImportStaticPages({
-		path: path.resolve(__dirname, 'dev/html'),
+	path: path.resolve(__dirname, 'dev/html'),
         blacklist: ['HTMLPageToBlacklist'],
         chunkAssign: {
             HTMLPageName: ['app', 'landing']
