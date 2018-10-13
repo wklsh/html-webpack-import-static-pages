@@ -13,7 +13,7 @@ class HtmlWebpackImportStaticPages {
 	}
 
 	apply(compiler) {
-		const sourcePath = path.resolve(this.options.path || compiler.context);
+		const sourcePath = path.resolve(this.options.path || compiler.context, "./src");
 
 		// Obtain all files within the source folder, and generate an array
 		fs.readdirSync(sourcePath)

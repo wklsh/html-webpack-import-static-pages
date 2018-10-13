@@ -28,9 +28,10 @@ module.exports = {
 
 plugins: [
     new HtmlWebpackImportStaticPages({
-        blacklist: ['page2'],
+		path: path.resolve(__dirname, 'dev/html'),
+        blacklist: ['HTMLPageToBlacklist'],
         chunkAssign: {
-            htmlPageName: ['app', 'landing']
+            HTMLPageName: ['app', 'landing']
         }
     }),
 
@@ -40,9 +41,9 @@ plugins: [
 
 ## Configuration
 
+- `path`: A path to search for `.html` files - Defaults to `webpack.context/src`
 - `blacklist`: Accepts HTML file names - HTML pages specified here would not be generated via HTMLWebpackPlugin
 - `chunkAssign`: Accepts HTML file names and chunk array - Assign chunks to be included into specific HTML pages
-- `path`: A path to search for `.html` files - Defaults to `webpack.context`
 
 ## Version
 
