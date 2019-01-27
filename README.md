@@ -42,9 +42,9 @@ plugins: [
 ## Options
 |Name|Type|Requirements|Description|
 |:--:|:--:|:-----:|:----------|
-|`path`|`{pathname}`|`optional`|A path to search for `.html` files - Defaults to `webpack.context/src`|
-|`blacklist`|`[HTMLPageName]`|`optional`|Specify HTML files to be ignored by HtmlWebPackPlugin|
-|`blacklist`|`HTMLPageName: ['Chunk']`|`optional`|Assign chunks to be included into specific HTML pages|
+|path|{pathname}|optional|A path to search for `.html` files - Defaults to `webpack.context/src`|
+|blacklist|[HTMLPageName]|optional|Specify HTML files to be ignored by HtmlWebPackPlugin|
+|chunkAssign|HTMLPageName: [chunk]|optional|Assign chunks to be included into specific .html pages|
 
 
 
